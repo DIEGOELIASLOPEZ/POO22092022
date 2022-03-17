@@ -1,6 +1,8 @@
 
 package coneptosbasicos;
+import ico.fes.Alumno;
 import ico.fes.Automovil;
+import ico.fes.Persona;
 import ico.fes.Silla;
 import java.awt.Color;
 
@@ -28,6 +30,13 @@ public class ConeptosBasicos {
         
         Automovil miAukura = new Automovil("Akura", "NSX", 2013, Color.gray);
         System.out.println(miAukura);
+        
+        Persona per1 = new Persona();
+        per1.SetEdad=(22);
+        System.out.println(per1);
+        
+        
+       
     }
     
 }

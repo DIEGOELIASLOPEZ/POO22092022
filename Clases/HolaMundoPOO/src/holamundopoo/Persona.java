@@ -32,7 +32,11 @@ public class Persona {
     }
 
     public void setEdad(int edad) {
-        this.edad = edad;
+    if(edad >=0 && edad <=120){
+    this.edad = edad;
+    }else{
+    System.out.println("Valor fuera de rango");
+        }
     }
 
     public String getNombre() {
