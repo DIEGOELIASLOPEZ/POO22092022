@@ -1,6 +1,7 @@
 
 package asus.com;
 
+
 import ico.fes.componentes.Monitor;
 import ico.fes.componentes.Mouse;
 import ico.fes.componentes.Procesador;
@@ -16,6 +17,11 @@ public class Computadora
     private Procesador CPU;
 
     public Computadora() {
+        
+        pantalla = new Monitor();
+        raton = new Mouse ();
+        teclado = new Teclado ();
+        CPU = new Procesador();
     }
 
     public Computadora(String marca, String modelo, Monitor pantalla, Mouse raton, Teclado teclado, Procesador CPU) {
@@ -77,8 +83,18 @@ public class Computadora
 
     @Override
     public String toString() {
-        return "Computadora{" + "marca=" + marca + ", modelo=" + modelo + ", pantalla=" + pantalla + ", raton=" + raton + ", teclado=" + teclado + ", CPU=" + CPU + '}';
+        /*
+        String estado = "Marca: " + this.marca + "\n";
+        estado = estado + "Modelo:" + this.modelo + "\n"; 
+        estado = estado + "Raton: Marca " + this.raton.getMarca()+", Tipo: "+ this.getRaton().getTipo()"\n"; 
+
+
+        
+        return estado;
+*/
+     return "Computadora{" + "marca=" + marca + ", modelo=" + modelo + ", pantalla=" + pantalla + ", raton=" + raton + ", teclado=" + teclado + ", CPU=" + CPU + '}';
     }
+    
     
     
     
