@@ -6,6 +6,7 @@ import ico.fes.componentes.Monitor;
 import ico.fes.componentes.Mouse;
 import ico.fes.componentes.Procesador;
 import ico.fes.componentes.Teclado;
+import ico.fes.herencia.Servidor;
 import javax.swing.JFrame;
 
 public class ReutilizaciónCodigo2209 {
@@ -37,13 +38,30 @@ public class ReutilizaciónCodigo2209 {
         new Procesador("M1", 3.4f));
         System.out.println(compu2);
         
-       compu2.getRaton().setMarca("Apple");
-       compu2.getRaton().setTipo("touch");
-        System.out.println(compu2);
        
+    /*Alumno alul=new Alumno ();
+    alu1.setNombre (" José");
+    System.out.println( alul );
+                                                            ");
+    Alumno alu2 = new Alumno ("1243243244", "ICO", "JOsé Perex", 19);
+    System.out.println( alu2 );
+    alu1.setNumeroCuenta ("2323232323");
        
         
-        //Ejercicio: Establecer un mouse de marca Logitech tipo optico 
+        //Ejercicio: Establecer un mouse de marca Logitech tipo optico*/ 
+    
+        System.out.println("\n\n---------------------COMPOSICION Y HERENCIA EN LA MISMA CLASE-----------------------------\n");
+        
+        Servidor server= new Servidor();
+        System.out.println(server);
+        server.setNumeroTargetaRed(2);
+        System.out.println(server);
+        server.setMarca("HP");
+        System.out.println(server);
+        server.setRaton(new Mouse("LG", "Optico"));
+        System.out.println(server);
+        server.getRaton().setMarca("Logitech");
+        System.out.println(server);
       
         
     }
